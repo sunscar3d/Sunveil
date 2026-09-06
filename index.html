@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>Sunveil // Suit Lab</title>
+<meta name="theme-color" content="#080a10">
+<meta name="description" content="Sunveil interactive 3D character and suit laboratory.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="boot" aria-live="polite"><div class="bootMark">SUNVEIL</div><div class="bootBar"><i></i></div><small>INITIALIZING CHARACTER LAB</small></div>
+<div id="app">
+<canvas id="gl"></canvas>
+<div id="hud">
+  <header class="top"><div class="logo">SUNVEIL<small>RA'S AVATAR // SUIT LAB</small></div><nav class="nav" id="nav"></nav><div class="topRight"><span class="chip" id="modeChip">DAYLIGHT</span><span class="chip">CONDUIT ONLINE</span></div></header>
+  <aside class="left"><div class="sectionTitle">SUITS // 04 AVAILABLE</div><div class="suitList" id="suitList"></div><div class="bottomLeft"><button class="btn" id="reset">Reset Camera</button><button class="btn" id="cinematic">Cinematic Orbit</button></div></aside>
+  <aside class="right"><div class="eyebrow">Equipped Suit</div><h1 id="suitName">Sunveil</h1><p class="desc" id="suitDesc"></p><div class="bar"><i id="powerBar"></i></div><div class="rowTitle"><span>Abilities</span><span id="abilityState">STANDBY</span></div><div id="abilities"></div><div class="rowTitle">Lighting State</div><div class="lighting" id="lights"></div><div class="rightFoot"><button class="btn" id="heroPose">Hero Pose</button><button class="btn" id="idlePose">Idle</button></div></aside>
+  <div class="bottom"><button class="btn" id="prev">‹ Previous</button><button class="btn primary" id="equip">Equip Suit</button><button class="btn" id="next">Next ›</button><button class="btn" id="abilityPreview">Preview Solar Energy</button></div>
+  <div class="hint">Drag / touch to orbit · wheel / pinch to zoom · 1–4 suits · A solar energy · E solar eyes · W wings · R reset · C cinematic</div>
+  <div class="crosshair"></div><div class="toast" id="toast"></div>
+</div></div>
+  <script src="app.js" defer></script>
+<noscript><div class="fatal">JavaScript is required to run the Sunveil Character Lab.</div></noscript>
+</body></html>
